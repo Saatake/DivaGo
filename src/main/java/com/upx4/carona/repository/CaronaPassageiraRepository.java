@@ -3,6 +3,8 @@ package com.upx4.carona.repository;
 import com.upx4.carona.domain.entity.CaronaPassageira;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
+
 public interface CaronaPassageiraRepository extends JpaRepository<CaronaPassageira, Long> {
     //Listar todas as passageiras de uma carona
     List<CaronaPassageira> findByCaronaId(Long caronaId);

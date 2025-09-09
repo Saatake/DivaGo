@@ -1,5 +1,6 @@
 package com.upx4.carona.domain.entity;
 
+import com.upx4.carona.domain.enums.Papel;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,7 +18,7 @@ public class CaronaPassageira {
     private Long id;
 
     @Enumerated(EnumType.STRING)
-    private StatusCaronaPassageira status;
+    private Papel status;
 
     @ManyToOne
     @JoinColumn(name = "carona_id")
